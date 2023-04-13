@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 globalThis.fetch = fetch;
+// import test from '../data/test.json';
 
 const API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/msmarco-distilbert-base-tas-b"
 
@@ -12,7 +13,8 @@ async function getData(payload){
     };
 
     let response = await fetch(API_URL,options)
-    let data = await response.json().then(data => console.log(data)) //JSON.stringify(response)
+    let data = await response.json().then(data => console.log(data)) 
+    console.log(Math.max(data))
     return data
 }
 
@@ -28,6 +30,11 @@ let data = getData(
         }
     })
 
+// let member_data = test["members"]
+
+// for (m_data in member_data){
+//     console.log(m_data)
+// }
 // // data.then(data => console.log(data))
 
 // console.log(data)

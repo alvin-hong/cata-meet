@@ -1,14 +1,5 @@
+t["members"]
 
-//     "inputs": {
-//         "source_sentence": "Cook Out",
-//         "sentences": [
-//             "Burgers - 112313",
-//             "Dinner",
-//             "Driving"
-//         ]
-//     }
+// for (m_data in member_data){
+//     console.log(m_data)
 // }
-
-// fetch(API_URL, {json:JSON.stringify(d)})
-//     .then(response => response.json())
-//     .then(data => console.log(data))
