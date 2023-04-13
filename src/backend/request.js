@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 globalThis.fetch = fetch;
+import test from "../data/test.json" assert { type: "json" };
 // import test from '../data/test.json';
 
 const API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/msmarco-distilbert-base-tas-b"
