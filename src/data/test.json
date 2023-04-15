@@ -3,11 +3,11 @@
     {   
         "name" : "John Doe",
         "number" : "1234567890",
-        "interests" : ["sports", "movies", "music"]
+        "interests" : ["big mac", "movies", "music"]
     },
     {
         "name" : "Kyle Filipowski",
         "number" : "0987654321",
-        "interests" : ["burgers", "penis", "dirty dancing"]
+        "interests" : ["burgers", "basketball", "dirty dancing"]
     }]
 }
