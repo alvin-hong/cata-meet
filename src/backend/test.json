@@ -9,5 +9,15 @@
         "name" : "Kyle Filipowski",
         "number" : "0987654321",
         "interests" : ["burgers", "basketball", "dirty dancing"]
+    },
+    {
+        "name" : "Kevin",
+        "number" : "1223",
+        "interests" : ["trees", "birds", "wood"]
+    },
+    {
+        "name" : "Kanye West",
+        "number" : "7264246824",
+        "interests" : ["graduation", "gold diggers", "kim kardashian"]
     }]
 }
