@@ -9,15 +9,21 @@ async function getData(payload){
 
     let options = {
         method: 'POST',
-        // headers : {"Authorization": "Bearer {api_token}"},
+        headers : {"Authorization": "Bearer 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"},
         body: JSON.stringify(payload),
         
     };
 
+    let max_val;
+
     let response = await fetch(API_URL,options)
-    let data = await response.json().then(data => console.log(data))
-    console.log(Math.max(...data))
-    return data
+    let data = await response.json().then(data => {
+        console.log(data);
+        console.log(Math.max(...data));
+        max_val = Math.max(...data);
+        return max_val
+    })
+    // return await max_val
 }
 
 
@@ -43,8 +49,10 @@ function getMatches(input){
             }
         })
 
+
         // let max = Math.max(...data);
-        console.log('name: ' + name + ' phone: ' + phone + '\n')
+        // console.log('name: ' + name + ' phone: ' + phone + '\n')
+        // console.log(data)
         
 
     }
