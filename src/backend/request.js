@@ -19,8 +19,8 @@ async function getData(payload){
     let response = await fetch(API_URL,options)
     let data = await response.json().then(data => {
         console.log(data);
-        console.log(Math.max(...data));
         max_val = Math.max(...data);
+        console.log(max_val)
         return max_val
     })
     // return await max_val
@@ -47,7 +47,7 @@ function getMatches(input){
                 "source_sentence": input,
                 "sentences": interests
             }
-        })
+        }).then(data => console.log(data))
 
 
         // let max = Math.max(...data);
